@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TO-Do List</title>
+    <link rel="stylesheet" href="TDL.css">
+
+  </head>
+  <body>
+        <center>
+                <table class="tbl" >
+                    <tr>
+                          <td class="cl1">
+              <h1>To-Do List</h1>
+              <input class="txt" type="text" id="txt">
+              <button class="btn" type="button" name="button" id="btn" >Click Me </button>
+
+             <div id="div1">
+               <ul type="none" class="unol"id="unol">
+
+               </ul>
+
+             </div>
+            </td>
+          </tr>
+          <tr>
+              <td class="cl2"></td>
+             <script type="text/javascript">
+               var e= document.getElementById('txt');
+               console.log(e);
+               var e1=document.getElementById('btn');
+               console.log(e1);
+               e1.addEventListener('click',fun)
+
+               function fun(){
+
+                 var e2=document.getElementById('unol');
+                 var e3=document.createElement('li');
+                 e3.textContent=e.value;
+                 e2.appendChild(e3)
+
+               }
+
+             </script>
+             </td>
+          </tr>
+             </table>
+          </center>
+  </body>
+</html>
